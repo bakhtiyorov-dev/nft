@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,70 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="./main.css">
 </head>
+
 <body class="bg-[#16091B]">
 
     <!-- ---------------Navbar starts--------------- -->
-    <nav class=" h-[15vh]  bg-[#16091B] border-b">
+    <nav class=" md:h-[15vh] h-[60px] px-[1rem] md:px-0  bg-[#16091B] border-b">
         <ul class="h-full w-full flex items-center justify-between container">
 
-            <li class="w-[66px] h-[66px]">
+            <li class="md:w-[66px] md:h-[66px] h-[48px] w-[48px]">
                 <img class="w-full h-full" src="./assets/logo.png" alt="">
             </li>
-            
-            <li>
-                <ul class="flex itens-center gap-[1rem]">
-                    <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] " href="">Explore</a></li>
-                    <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] " href="">Creators</a></li>
-                    <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] " href="">Community</a></li>
+
+            <li class="md:block hidden">
+                <ul class="flex itens-center gap-[2rem] navlinks">
+                    <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] "
+                            href="">Explore</a></li>
+                    <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] "
+                            href="">Creators</a></li>
+                    <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] "
+                            href="">Community</a></li>
                 </ul>
+            </li>
+
+            <li class="md:block hidden">
+                <button
+                    class="w-[195px] h-[64px] bg-[#E9D7A71A] border border-[#FFCE4E] text-[#FFCE4E] text-[18px] leading-[21px] font-bold hover:bg-[#E9D7A710]">Connect
+                    Wallet
+                </button>
+            </li>
+
+            <li class="block md:hidden" id="menu-btn">
+                <img src="assets/menu.png" alt="">
             </li>
 
         </ul>
     </nav>
+
+    <nav id="mobile-nav" class="md:hidden transition-all duration-200   block fixed top-[-100%] left-0 h-screen w-full bg-[#16091B]">
+        <ul class="flex h-full flex-col items-center justify-center gap-[2rem] navlinks">
+
+            <li>
+                <button
+                id="close-menu"
+                    class="w-[50px] h-[50px] rounded-full bg-[#E9D7A71A]  text-[#FFCE4E] text-[18px] leading-[21px] font-bold hover:bg-[#E9D7A710]">
+                    X
+                </button>
+            </li>
+
+            <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] " href="">Explore</a></li>
+
+            <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] " href="">Creators</a></li>
+            
+            <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] " href="">Community</a></li>
+
+            <li>
+                <button
+                    class="w-[195px] h-[64px] bg-[#E9D7A71A] border border-[#FFCE4E] text-[#FFCE4E] text-[18px] leading-[21px] font-bold hover:bg-[#E9D7A710]">Connect
+                    Wallet
+                </button>
+            </li>
+        </ul>
+    </nav>
     <!-- ---------------Navbar ends--------------- -->
 
+    <script src="./script.js"></script>
 </body>
+
 </html>

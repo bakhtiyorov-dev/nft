@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 
-body{
+body {
     font-family: 'Work sans', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1367px;
     width: 100%;
     margin: 0 auto;
+}
+
+.navlinks>li:hover a {
+    border-bottom: 3px solid #FFCE4E;
 }
