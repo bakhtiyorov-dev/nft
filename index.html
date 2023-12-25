@@ -13,7 +13,7 @@
 <body class="bg-[#16091B]">
 
     <!-- ---------------Navbar starts--------------- -->
-    <nav class=" md:h-[15vh] h-[60px] px-[1rem] md:px-0  bg-[#16091B] border-b">
+    <nav class=" md:h-[15vh] max-h-[150px] h-[60px] px-[1rem] md:px-0  bg-[#16091B] border-b">
         <ul class="h-full w-full flex items-center justify-between container">
 
             <li class="md:w-[66px] md:h-[66px] h-[48px] w-[48px]">
@@ -45,12 +45,12 @@
         </ul>
     </nav>
 
-    <nav id="mobile-nav" class="md:hidden transition-all duration-200   block fixed top-[-100%] left-0 h-screen w-full bg-[#16091B]">
+    <nav id="mobile-nav"
+        class="md:hidden transition-all duration-200   block fixed top-[-100%] left-0 h-screen w-full bg-[#16091B]">
         <ul class="flex h-full flex-col items-center justify-center gap-[2rem] navlinks">
 
             <li>
-                <button
-                id="close-menu"
+                <button id="close-menu"
                     class="w-[50px] h-[50px] rounded-full bg-[#E9D7A71A]  text-[#FFCE4E] text-[18px] leading-[21px] font-bold hover:bg-[#E9D7A710]">
                     X
                 </button>
@@ -59,7 +59,7 @@
             <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] " href="">Explore</a></li>
 
             <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] " href="">Creators</a></li>
-            
+
             <li><a class="text-[#F5FBF2] leading-[21.11px] text-[18px] hover:text-[#FFCE4E] " href="">Community</a></li>
 
             <li>
@@ -71,6 +71,36 @@
         </ul>
     </nav>
     <!-- ---------------Navbar ends--------------- -->
+
+    <main class="container">
+        <!--================= HERO SECTION STARTS================= -->
+        <section class="">
+            <!-- left -->
+            <div>
+                <h1 class="text-[#F5FBF2] text-[85px] leading-[130px] font-['Oxanium'] font-[700]">
+                    Explore, Buy and Sell the 
+                    <span class="text-[#FFCE4E]">Best NFTs!</span>
+                </h1>
+
+                <div>
+                    <button class="w-[257px] h-[84px] text-black text-[28px] font-bold leading-[36px] bg-[#FFCE4E]" >Explore</button>
+                    <button class="w-[257px] h-[84px] text-white border border-[#FFCE4E] text-[28px] font-bold leading-[36px] bg-[#E9D7A71A]" >Create</button>
+                </div>
+                     
+
+            </div>
+            <!-- left -->
+
+
+             <!-- right -->
+            <div>
+               
+            </div>
+             <!-- right -->
+
+        </section>
+        <!--================= HERO SECTION ENDS================= -->
+    </main>
 
     <script src="./script.js"></script>
 </body>
